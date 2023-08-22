@@ -1,22 +1,11 @@
 //
-//  Person.swift
+//  DataStore.swift
 //  ContactApp
 //
 //  Created by Екатерина Теляубердина on 22.08.2023.
 //
 
 import Foundation
-
-struct Person {
-    var name: String
-    var surname: String
-    var phoneNumber: String
-    var email: String
-    
-    var fullName: String {
-        "\(name) \(surname)"
-    }
-}
 
 class DataStore {
     let names = [
@@ -30,7 +19,7 @@ class DataStore {
         "James",
         "Lucas",
         "Mia"
-    ]
+    ].shuffled()
     
     let surnames = [
         "Wilson",
@@ -43,20 +32,20 @@ class DataStore {
         "Lee",
         "Perez",
         "Thompson"
-    ]
+    ].shuffled()
     
     let phoneNumbers = [
-        "9987543678",
-        "9827551898",
-        "9826441780",
-        "9900882543",
-        "9766299992",
-        "9934002298",
-        "9822300034",
-        "9033444188",
-        "9923476111",
-        "9234887110"
-    ]
+        "998-754-36-78",
+        "982-755-18-98",
+        "982-644-17-80",
+        "990-088-25-43",
+        "976-629-99-92",
+        "993-400-22-98",
+        "982-230-00-34",
+        "903-344-41-88",
+        "992-347-61-11",
+        "923-488-71-10"
+    ].shuffled()
     
     let emails = [
         "dj78@gmail.com",
@@ -69,5 +58,5 @@ class DataStore {
         "well@gmail.com",
         "fine@gmail.com",
         "good@gmail.com",
-    ]
+    ].shuffled()
 }

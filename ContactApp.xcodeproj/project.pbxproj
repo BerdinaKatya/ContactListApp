@@ -14,6 +14,8 @@
 		644B71C02A94C8D6006D2A8E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 644B71BF2A94C8D6006D2A8E /* Assets.xcassets */; };
 		644B71C32A94C8D6006D2A8E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 644B71C12A94C8D6006D2A8E /* LaunchScreen.storyboard */; };
 		644B71CB2A94CF06006D2A8E /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 644B71CA2A94CF06006D2A8E /* Person.swift */; };
+		644B71D02A94DE50006D2A8E /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 644B71CF2A94DE50006D2A8E /* DataStore.swift */; };
+		644B71D72A950968006D2A8E /* ContactInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 644B71D62A950968006D2A8E /* ContactInfoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		644B71C22A94C8D6006D2A8E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		644B71C42A94C8D6006D2A8E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		644B71CA2A94CF06006D2A8E /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		644B71CF2A94DE50006D2A8E /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
+		644B71D62A950968006D2A8E /* ContactInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactInfoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +62,50 @@
 		644B71B52A94C8D4006D2A8E /* ContactApp */ = {
 			isa = PBXGroup;
 			children = (
-				644B71B62A94C8D4006D2A8E /* AppDelegate.swift */,
-				644B71B82A94C8D4006D2A8E /* SceneDelegate.swift */,
-				644B71BA2A94C8D4006D2A8E /* ContactListViewController.swift */,
-				644B71CA2A94CF06006D2A8E /* Person.swift */,
-				644B71BC2A94C8D4006D2A8E /* Main.storyboard */,
+				644B71D52A94E088006D2A8E /* App */,
+				644B71D32A94DF28006D2A8E /* Storyboards */,
+				644B71D12A94DEE0006D2A8E /* ViewControllers */,
+				644B71CC2A94DE18006D2A8E /* Models */,
 				644B71BF2A94C8D6006D2A8E /* Assets.xcassets */,
-				644B71C12A94C8D6006D2A8E /* LaunchScreen.storyboard */,
 				644B71C42A94C8D6006D2A8E /* Info.plist */,
 			);
 			path = ContactApp;
+			sourceTree = "<group>";
+		};
+		644B71CC2A94DE18006D2A8E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				644B71CA2A94CF06006D2A8E /* Person.swift */,
+				644B71CF2A94DE50006D2A8E /* DataStore.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		644B71D12A94DEE0006D2A8E /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				644B71BA2A94C8D4006D2A8E /* ContactListViewController.swift */,
+				644B71D62A950968006D2A8E /* ContactInfoViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		644B71D32A94DF28006D2A8E /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				644B71C12A94C8D6006D2A8E /* LaunchScreen.storyboard */,
+				644B71BC2A94C8D4006D2A8E /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		644B71D52A94E088006D2A8E /* App */ = {
+			isa = PBXGroup;
+			children = (
+				644B71B62A94C8D4006D2A8E /* AppDelegate.swift */,
+				644B71B82A94C8D4006D2A8E /* SceneDelegate.swift */,
+			);
+			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -144,7 +182,9 @@
 				644B71BB2A94C8D4006D2A8E /* ContactListViewController.swift in Sources */,
 				644B71B72A94C8D4006D2A8E /* AppDelegate.swift in Sources */,
 				644B71CB2A94CF06006D2A8E /* Person.swift in Sources */,
+				644B71D02A94DE50006D2A8E /* DataStore.swift in Sources */,
 				644B71B92A94C8D4006D2A8E /* SceneDelegate.swift in Sources */,
+				644B71D72A950968006D2A8E /* ContactInfoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
