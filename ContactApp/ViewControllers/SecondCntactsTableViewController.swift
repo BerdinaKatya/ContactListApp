@@ -11,7 +11,7 @@ final class SecondCntactsTableViewController: UITableViewController {
 
     var contacts: [Person]!
 
-    // MARK: - Table view data source
+    // MARK: - UITableViewDataSource
     override func numberOfSections(in tableView: UITableView) -> Int {
         contacts.count
     }
@@ -41,5 +41,9 @@ final class SecondCntactsTableViewController: UITableViewController {
         cell.contentConfiguration = content
         
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
     }
 }

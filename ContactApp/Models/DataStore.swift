@@ -7,7 +7,7 @@
 
 import Foundation
 
-class DataStore {
+final class DataStore {
     let names = [
         "Aaron",
         "Liam",

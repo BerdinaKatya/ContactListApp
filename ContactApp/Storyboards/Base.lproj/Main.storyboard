@@ -130,11 +130,11 @@
         <!--Tab Bar Controller-->
         <scene sceneID="O2m-oj-Ior">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="jNb-fK-lc2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="zDw-lb-5qf" customClass="TabBarController" customModule="ContactApp" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="vQq-2j-o8a"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="W7n-3Z-Lmz">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
@@ -143,13 +143,13 @@
                         <segue destination="DI2-BS-Dji" kind="relationship" relationship="viewControllers" id="55G-7a-B3b"/>
                     </connections>
                 </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jNb-fK-lc2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="773" y="-8"/>
         </scene>
         <!--Contact-->
         <scene sceneID="UQI-mE-bKe">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="2VV-7L-Aee" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="qwd-KL-i70" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" tag="1" title="Contact" image="person.circle.fill" catalog="system" id="m8Y-AN-8YY"/>
                     <toolbarItems/>
@@ -162,6 +162,7 @@
                         <segue destination="zDw-lb-5qf" kind="relationship" relationship="rootViewController" id="J2O-yj-zok"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2VV-7L-Aee" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-62" y="-8"/>
         </scene>

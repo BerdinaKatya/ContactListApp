@@ -8,10 +8,10 @@
 import Foundation
 
 struct Person {
-    var name: String
-    var surname: String
-    var phoneNumber: String
-    var email: String
+    let name: String
+    let surname: String
+    let phoneNumber: String
+    let email: String
     
     var fullName: String {
         "\(name) \(surname)"
@@ -21,7 +21,7 @@ struct Person {
         let dataStore = DataStore()
         var contactList: [Person] = []
         
-        for index in 0...dataStore.names.count - 1 {
+        for index in 0..<dataStore.names.count {
             contactList.append(Person(
                 name: dataStore.names[index],
                 surname: dataStore.surnames[index],

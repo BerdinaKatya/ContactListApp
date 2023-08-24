@@ -14,11 +14,11 @@ final class TabBarController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.title = "Contact List"
-        getContactsList()
+        passContactsList()
     }
     
-    private func getContactsList() {
-        guard let tabBarVC = self.viewControllers else { return }
+    private func passContactsList() {
+        guard let tabBarVC = viewControllers else { return }
         guard let contactListVC = tabBarVC.first as? ContactListViewController else { return }
         guard let secondContactsVC = tabBarVC.last as? SecondCntactsTableViewController else { return }
 
