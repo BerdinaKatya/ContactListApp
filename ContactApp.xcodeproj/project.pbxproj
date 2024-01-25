@@ -70,6 +70,7 @@
 				644B71D32A94DF28006D2A8E /* Storyboards */,
 				644B71D12A94DEE0006D2A8E /* ViewControllers */,
 				644B71CC2A94DE18006D2A8E /* Models */,
+				644B72022A98BD63006D2A8E /* Services */,
 				644B71BF2A94C8D6006D2A8E /* Assets.xcassets */,
 				644B71C42A94C8D6006D2A8E /* Info.plist */,
 			);
@@ -80,7 +81,6 @@
 			isa = PBXGroup;
 			children = (
 				644B71CA2A94CF06006D2A8E /* Person.swift */,
-				644B71CF2A94DE50006D2A8E /* DataStore.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -112,6 +112,14 @@
 				644B71B82A94C8D4006D2A8E /* SceneDelegate.swift */,
 			);
 			path = App;
+			sourceTree = "<group>";
+		};
+		644B72022A98BD63006D2A8E /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				644B71CF2A94DE50006D2A8E /* DataStore.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

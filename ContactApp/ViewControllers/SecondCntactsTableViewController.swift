@@ -26,7 +26,7 @@ final class SecondCntactsTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "secondContactCell", for: indexPath)
-        let person = contacts[indexPath.row]
+        let person = contacts[indexPath.section]
         
         var content = cell.defaultContentConfiguration()
         switch indexPath.row {

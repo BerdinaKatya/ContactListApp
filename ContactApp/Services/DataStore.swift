@@ -8,7 +8,10 @@
 import Foundation
 
 final class DataStore {
-    let names = [
+    
+    static let shared = DataStore()
+    
+    var names = [
         "Aaron",
         "Liam",
         "Olivia",
@@ -59,4 +62,8 @@ final class DataStore {
         "fine@gmail.com",
         "good@gmail.com",
     ].shuffled()
+    
+    private init() {}
 }
+
+

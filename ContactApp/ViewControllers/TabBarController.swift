@@ -9,7 +9,6 @@ import UIKit
 
 final class TabBarController: UITabBarController {
     
-    private let contactList = Person.getPersonsList()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,10 +17,10 @@ final class TabBarController: UITabBarController {
     }
     
     private func passContactsList() {
-        guard let tabBarVC = viewControllers else { return }
-        guard let contactListVC = tabBarVC.first as? ContactListViewController else { return }
-        guard let secondContactsVC = tabBarVC.last as? SecondCntactsTableViewController else { return }
+        guard let contactListVC = viewControllers?.first as? ContactListViewController else { return }
+        guard let secondContactsVC = viewControllers?.last as? SecondCntactsTableViewController else { return }
 
+        let contactList = Person.getPersonsList()
         contactListVC.contacts = contactList
         secondContactsVC.contacts = contactList
     }

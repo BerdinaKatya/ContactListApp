@@ -18,7 +18,7 @@ struct Person {
     }
     
     static func getPersonsList() -> [Person] {
-        let dataStore = DataStore()
+        let dataStore = DataStore.shared
         var contactList: [Person] = []
         
         for index in 0..<dataStore.names.count {
